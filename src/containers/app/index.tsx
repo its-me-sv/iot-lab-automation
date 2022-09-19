@@ -3,8 +3,6 @@ import {
   Screen, Light, Fan, Projector,
 } from './styles';
 
-// images
-
 interface AppProps {}
 
 const App: React.FC<AppProps> = () => {
