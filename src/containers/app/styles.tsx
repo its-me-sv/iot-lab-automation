@@ -58,10 +58,10 @@ export const Screen = styled.img.attrs({
   }
 `;
 
-export const Light = styled.img.attrs({
+export const Light = styled.img.attrs<{on: Number}>({
   src: TubeLight,
   alt: "Tube Light",
-})<{on: Boolean}>`
+})<{on: Number}>`
   height: 4.2rem;
   width: auto;
   border-radius: 0.42rem;
@@ -78,10 +78,10 @@ export const Light = styled.img.attrs({
   }
 `;
 
-export const Fan = styled.img.attrs<{on:Boolean}>((props) => ({
+export const Fan = styled.img.attrs<{on:Number}>((props) => ({
   src: props.on ? CeilFan : CeilFanOff,
   alt: "Ceiling Fan",
-}))<{on: Boolean}>`
+}))<{on: Number}>`
   width: 4.2rem;
   height: auto;
   border-radius: 0.42rem;

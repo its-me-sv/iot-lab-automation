@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'geomanist-regular';
-  src: local('geomanist-regular'), url(./assets/fonts/geomanist-regular-webfont.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'geomanist-italic';
-  src: local('geomanist-italic'), url(./assets/fonts/geomanist-regular-italic-webfont.ttf) format('truetype');
-}
-
 body {
   background-color: #eef0f4;
 }
