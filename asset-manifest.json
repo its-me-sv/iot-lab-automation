@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/iot-lab-automation/static/css/main.09b71805.css",
+    "main.js": "/iot-lab-automation/static/js/main.18ca1978.js",
+    "static/media/projector.png": "/iot-lab-automation/static/media/projector.46287f969441863532ac.png",
+    "static/media/tube-light.png": "/iot-lab-automation/static/media/tube-light.5c767f1a60ada13b535a.png",
+    "index.html": "/iot-lab-automation/index.html",
+    "main.09b71805.css.map": "/iot-lab-automation/static/css/main.09b71805.css.map",
+    "main.18ca1978.js.map": "/iot-lab-automation/static/js/main.18ca1978.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09b71805.css",
+    "static/js/main.18ca1978.js"
+  ]
+}
