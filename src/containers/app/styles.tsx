@@ -3,7 +3,8 @@ import styled from "styled-components";
 // images
 import ProjectorScreen from '../../assets/icons/screen.png';
 import TubeLight from '../../assets/icons/tube-light.png';
-import CeilFan from '../../assets/icons/fan.png';
+import CeilFanOff from '../../assets/icons/fan-off.png';
+import CeilFan from '../../assets/icons/fan-on.gif';
 import Screener from '../../assets/icons/projector.png';
 
 export const Container = styled.div`
@@ -60,32 +61,34 @@ export const Screen = styled.img.attrs({
 export const Light = styled.img.attrs({
   src: TubeLight,
   alt: "Tube Light",
-})`
+})<{on: Boolean}>`
   height: 4.2rem;
   width: auto;
   border-radius: 0.42rem;
   padding: 0.36rem;
-  background: #eef0f4;
+  /* background: #eef0f4;
   box-shadow: inset 9.91px 9.91px 15px #d9dade,
-    inset -9.91px -9.91px 15px #ffffff;
-  /* background: #eff95d;
-  box-shadow: 9.91px 9.91px 15px #d9e355, -9.91px -9.91px 15px #ffff65; */
+    inset -9.91px -9.91px 15px #ffffff; */
+  ${props => props.on && `
+    background: #eff95d;
+    box-shadow: 9.91px 9.91px 15px #d9e355, -9.91px -9.91px 15px #ffff65;
+  `}
   @media only screen and (max-width: 768px) {
     height: 7rem;
   }
 `;
 
-export const Fan = styled.img.attrs({
-  src: CeilFan,
+export const Fan = styled.img.attrs<{on:Boolean}>((props) => ({
+  src: props.on ? CeilFan : CeilFanOff,
   alt: "Ceiling Fan",
-})`
+}))<{on: Boolean}>`
   width: 4.2rem;
   height: auto;
   border-radius: 0.42rem;
   padding: 0.36rem;
-  background: #eef0f4;
+  /* background: #eef0f4;
   box-shadow: inset 9.91px 9.91px 15px #d9dade,
-    inset -9.91px -9.91px 15px #ffffff;
+    inset -9.91px -9.91px 15px #ffffff; */
   /* background: #67e1e9;
   box-shadow: 9.91px 9.91px 15px #5ecdd4, -9.91px -9.91px 15px #70f5fe; */
   @media only screen and (max-width: 768px) {
