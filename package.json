@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://its-me-sv.github.io/iot-lab-automation",
   "dependencies": {
+    "@netlify/functions": "^1.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "netlify-cli": "^11.8.0"
   }
 }
